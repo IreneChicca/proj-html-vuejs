@@ -45,10 +45,22 @@ button {
 
 .btn-secondary {
   background-color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  &:hover {
+    background-color: #fff;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+  }
 }
 
 .btn-white {
   background-color: #fff;
   color: var(--primary-color);
+  border: 1px solid #fff;
+  &:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: 1px solid #fff;
+  }
 }
 </style>

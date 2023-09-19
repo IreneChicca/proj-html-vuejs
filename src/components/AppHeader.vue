@@ -58,10 +58,5 @@ header {
       color: var(--secondary-color);
     }
   }
-
-  .hover:hover {
-    background-color: #fff;
-    color: var(--primary-color);
-  }
 }
 </style>
