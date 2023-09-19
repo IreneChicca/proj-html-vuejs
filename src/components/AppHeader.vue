@@ -34,6 +34,7 @@ export default {
         :text="btnText"
         color="gold"
         class="text-uppercase hover"
+        btnicon=""
       ></Button>
     </ul>
   </header>
@@ -42,7 +43,6 @@ export default {
 <style lang="scss" scoped>
 header {
   background-color: var(--primary-color);
-  font-family: "Fredoka", sans-serif;
   color: #fff;
   font-weight: 500;
 
