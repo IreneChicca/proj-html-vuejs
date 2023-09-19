@@ -21,7 +21,7 @@ export default {
 button {
   color: #fff;
 
-  padding: 10px 30px 10px 30px !important;
+  padding: 15px 35px 15px 35px !important;
   border-radius: 30px;
   border: none;
   font-weight: 500;

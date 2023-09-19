@@ -30,7 +30,11 @@ export default {
 
     <ul class="d-flex align-items-center">
       <li v-for="option in navText" class="p-3">{{ option }}</li>
-      <Button :text="btnText" color="gold"></Button>
+      <Button
+        :text="btnText"
+        color="gold"
+        class="text-uppercase hover"
+      ></Button>
     </ul>
   </header>
 </template>
@@ -53,6 +57,11 @@ header {
     &:hover {
       color: var(--secondary-color);
     }
+  }
+
+  .hover:hover {
+    background-color: #fff;
+    color: var(--primary-color);
   }
 }
 </style>
