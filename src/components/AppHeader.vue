@@ -1,4 +1,6 @@
 <script>
+import Button from "./Button.vue";
+
 export default {
   data() {
     return {
@@ -12,8 +14,11 @@ export default {
         "Contact",
         "Purchase",
       ],
+      btnText: "View Courses",
     };
   },
+
+  components: { Button },
 };
 </script>
 
@@ -25,6 +30,7 @@ export default {
 
     <ul class="d-flex align-items-center">
       <li v-for="option in navText" class="p-3">{{ option }}</li>
+      <Button :text="btnText" color="gold"></Button>
     </ul>
   </header>
 </template>
