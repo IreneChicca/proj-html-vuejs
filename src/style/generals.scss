@@ -1,0 +1,8 @@
+@use "./partials/mixins.scss" as *;
+@use "./partials/variables.scss" as *;
+
+:root {
+  --primary-color: #e56768;
+  --secondary-color: #e9d758;
+  --text-color: #3d404f;
+}
