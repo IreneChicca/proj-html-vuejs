@@ -1,8 +1,19 @@
 @use "./partials/mixins.scss" as *;
 @use "./partials/variables.scss" as *;
 
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap");
+
 :root {
   --primary-color: #e56768;
   --secondary-color: #e9d758;
   --text-color: #3d404f;
+}
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+
+img {
+  width: 100%;
 }
