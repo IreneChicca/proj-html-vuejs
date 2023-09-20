@@ -10,6 +10,11 @@ export default {
         "Apply for university",
         "Browse through courses",
         "Read More",
+        "View All Events",
+        "Find More",
+        "View Course",
+        "Discover the Method",
+        "List of Fees",
       ],
     };
   },
@@ -52,18 +57,14 @@ export default {
       class="courses container m-auto d-flex justify-content-evenly align-items-center"
     >
       <div class="col-5">
-        <img
-          src="../assets/img/img/Books-icon.png"
-          alt=""
-          class="icon-img pb-3"
-        />
+        <img src="../assets/img/img/Books-icon.png" alt="" class="icon-img" />
         <h2>Thousands of courses for any type of student</h2>
         <p class="pt-4">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem
           laborum numquam ex quod, eligendi, exercitationem mollitia nihil error
           illo dolore voluptatem nulla obcaecati dicta eum? Lorem ipsum dolor,
           sit amet consectetur adipisicing elit. Molestiae, sint.
-          <span class="pt-5"
+          <span class="d-block pt-5"
             ><Button :text="btnText[2]" color="gold"></Button
           ></span>
         </p>
@@ -73,7 +74,7 @@ export default {
       </div>
     </section>
 
-    <!-- section III - faculties -->
+    <!-- section III - Faculties -->
     <section class="faculties mt-5">
       <div class="text-center">
         <h2>Faculties available at EduPrime</h2>
@@ -143,6 +144,9 @@ export default {
 
     <section class="uni">
       <div class="container m-auto text-center p-5">
+        <div>
+          <img src="../assets/img/img/Clock-and-Bell.png" class="icon-img" />
+        </div>
         <h2>University Year</h2>
         <div class="timeline">
           <div class="d-flex justify-content-end me-5">
@@ -183,9 +187,110 @@ export default {
       </div>
     </section>
 
-    <!-- -->
-    <section></section>
-    <!-- -->
+    <!-- section VI - Events -->
+    <section class="events text-center">
+      <div class="container m-auto">
+        <img
+          src="../assets/img/img/upcoming-events-calendar-icon.png"
+          class="icon-img"
+        />
+        <h2>Upcoming Events</h2>
+      </div>
+      <div><!-- inserisci card con v-for --></div>
+      <Button :text="btnText[4]" color="gold"></Button>
+    </section>
+    <!-- section VII - Latest -->
+
+    <section class="latest container m-auto pt-5 pb-5">
+      <h2 class="ms-5">Latest Courses</h2>
+      <div class="container m-auto d-flex text-center p-4">
+        <!-- card I -->
+        <div class="col-3 ccard m-4 p-4">
+          <div class="p-4">
+            <img src="../assets/img/img/Decisions-icon.png" alt="" />
+          </div>
+          <h5 class="p-2">Make Better Decisions</h5>
+          <p class="p-2">
+            <font-awesome-icon icon="fa-solid fa-user" class="me-2" />Teacher:
+            <span>James Colins</span>
+          </p>
+          <p class="p-1">
+            <font-awesome-icon
+              icon="fa-solid fa-money-bill-1"
+              class="me-2"
+            />Price:
+            <span> $21.00</span>
+          </p>
+          <div class="btn">
+            <Button :text="btnText[6]" btnicon="fa-solid fa-eye"></Button>
+          </div>
+        </div>
+        <!-- card II -->
+        <div class="col-3 ccard m-4 p-4">
+          <div class="p-4">
+            <img src="../assets/img/img/Speaker-icon.png" alt="" />
+          </div>
+          <h5 class="p-2">How to be a speaker</h5>
+          <p class="p-2">
+            <font-awesome-icon icon="fa-solid fa-user" class="me-2" />Teacher:
+            <span>James Colins</span>
+          </p>
+          <p class="p-1">
+            <font-awesome-icon
+              icon="fa-solid fa-money-bill-1"
+              class="me-2"
+            />Price:
+            <span> Free</span>
+          </p>
+          <div class="btn">
+            <Button :text="btnText[6]" btnicon="fa-solid fa-eye"></Button>
+          </div>
+        </div>
+        <!-- card III -->
+        <div class="col-3 ccard m-4 p-4">
+          <div class="p-4">
+            <img src="../assets/img/img/Network-icon.png" alt="" />
+          </div>
+          <h5 class="p-2">Network Introductions</h5>
+          <p class="p-2">
+            <font-awesome-icon icon="fa-solid fa-user" class="me-2" />Teacher:
+            <span>James Colins</span>
+          </p>
+          <p class="p-1">
+            <font-awesome-icon
+              icon="fa-solid fa-money-bill-1"
+              class="me-2"
+            />Price:
+            <span> Free</span>
+          </p>
+          <div class="btn">
+            <Button :text="btnText[6]" btnicon="fa-solid fa-eye"></Button>
+          </div>
+        </div>
+        <!-- card IV -->
+        <div class="col-3 ccard m-4 p-4">
+          <div class="p-4">
+            <img src="../assets/img/img/Brand-icon.png" alt="" />
+          </div>
+          <h5 class="p-2">Brand Management</h5>
+          <p class="p-2">
+            <font-awesome-icon icon="fa-solid fa-user" class="me-2" />Teacher:
+            <span>James Colins</span>
+          </p>
+          <p class="p-1">
+            <font-awesome-icon
+              icon="fa-solid fa-money-bill-1"
+              class="me-2"
+            />Price:
+            <span> Free</span>
+          </p>
+          <div class="btn">
+            <Button :text="btnText[6]" btnicon="fa-solid fa-eye"></Button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- -->
     <!-- -->
 
@@ -200,6 +305,10 @@ main {
   h1,
   h2 {
     font-weight: 700;
+  }
+  .icon-img {
+    width: 50px;
+    padding-bottom: 30px !important;
   }
 }
 
@@ -223,10 +332,6 @@ main {
 
 .courses {
   height: 600px;
-
-  .icon-img {
-    width: 50px;
-  }
 }
 
 // section III - Faculties
@@ -295,5 +400,35 @@ main {
       padding: 10px 0 !important;
     }
   }
+}
+
+// section VI - Events
+
+.events {
+  background-color: var(--primary-color);
+  h2 {
+    color: #fff;
+  }
+}
+
+// section VII - Latest
+
+.ccard {
+  box-shadow: 2px 2px 20px #dddddd;
+
+  img {
+    width: 100px;
+  }
+  h5 {
+    font-weight: 700;
+  }
+
+  span {
+    font-weight: 500;
+  }
+}
+
+.btn {
+  margin-bottom: -65px !important;
 }
 </style>

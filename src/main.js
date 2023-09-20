@@ -15,7 +15,20 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { faUserPlus } from "@fortawesome/free-solid-svg-icons";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { faEye } from "@fortawesome/free-solid-svg-icons";
+import { faMoneyBill1 } from "@fortawesome/free-solid-svg-icons";
+import { faCalendarDays } from "@fortawesome/free-regular-svg-icons";
+
 /* add icons to the library */
-library.add(faStar, faMagnifyingGlass, faUserPlus);
+library.add(
+  faStar,
+  faMagnifyingGlass,
+  faUserPlus,
+  faUser,
+  faEye,
+  faMoneyBill1,
+  faCalendarDays
+);
 
 createApp(App).component("font-awesome-icon", FontAwesomeIcon).mount("#app");

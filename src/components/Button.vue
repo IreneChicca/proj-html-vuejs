@@ -41,6 +41,11 @@ button {
 }
 .btn-primary {
   background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  &:hover {
+    background-color: #fff;
+    color: var(--primary-color);
+  }
 }
 
 .btn-secondary {
