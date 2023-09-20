@@ -139,14 +139,56 @@ export default {
       </div>
     </section>
 
+    <!-- section V - University -->
+
+    <section class="uni">
+      <div class="container m-auto text-center p-5">
+        <h2>University Year</h2>
+        <div class="timeline">
+          <div class="d-flex justify-content-end me-5">
+            <div class="col-4 me-5">
+              <h6>Demo Classes</h6>
+              <p>
+                In the first week, students try to accomodate with teaching
+                style and choose their optional classes.
+              </p>
+            </div>
+            <div class="col-4 me-5">
+              <h6>Graduation Day</h6>
+              <p>
+                On the day of graduation, all students gather for the ceremony
+                and the networking and party among others.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-start ms-5">
+          <div class="col-4 ms-4">
+            <h6>Demo Classes</h6>
+            <p>
+              In the first week, students try to accomodate with teaching style
+              and choose their optional classes.
+            </p>
+          </div>
+
+          <div class="col-4 ms-5 ps-4">
+            <h6>Demo Classes</h6>
+            <p>
+              In the first week, students try to accomodate with teaching style
+              and choose their optional classes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -->
+    <section></section>
+    <!-- -->
+    <!-- -->
     <!-- -->
 
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
     <section></section>
   </main>
 </template>
@@ -226,6 +268,32 @@ main {
 .law-text {
   p {
     padding: 30px 0 !important;
+  }
+}
+
+// section V - University
+
+.uni {
+  background-color: var(--primary-color);
+  padding: 100px 0 !important;
+  color: #fff;
+
+  h2 {
+    background-color: red;
+    display: inline;
+  }
+
+  .timeline {
+    background-image: url(../assets/img/img/Timeline-Item.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 300px;
+    margin: 80px 0 50px !important;
+
+    p {
+      font-weight: 100;
+      padding: 10px 0 !important;
+    }
   }
 }
 </style>
