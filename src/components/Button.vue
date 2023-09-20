@@ -34,7 +34,7 @@ export default {
 <style lang="scss" scoped>
 button {
   color: #fff;
-  padding: 15px 35px 15px 35px !important;
+  padding: 18px 40px 18px 40px !important;
   border-radius: 30px;
   border: none;
   font-weight: 600;

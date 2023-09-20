@@ -205,7 +205,7 @@ export default {
       <h2 class="ms-5">Latest Courses</h2>
       <div class="container m-auto d-flex text-center p-4">
         <!-- card I -->
-        <div class="col-3 ccard m-4 p-4">
+        <div class="ccard m-4 p-4">
           <div class="p-4">
             <img src="../assets/img/img/Decisions-icon.png" alt="" />
           </div>
@@ -226,7 +226,7 @@ export default {
           </div>
         </div>
         <!-- card II -->
-        <div class="col-3 ccard m-4 p-4">
+        <div class="ccard m-4 p-4">
           <div class="p-4">
             <img src="../assets/img/img/Speaker-icon.png" alt="" />
           </div>
@@ -247,7 +247,7 @@ export default {
           </div>
         </div>
         <!-- card III -->
-        <div class="col-3 ccard m-4 p-4">
+        <div class="ccard m-4 p-4">
           <div class="p-4">
             <img src="../assets/img/img/Network-icon.png" alt="" />
           </div>
@@ -268,7 +268,7 @@ export default {
           </div>
         </div>
         <!-- card IV -->
-        <div class="col-3 ccard m-4 p-4">
+        <div class="ccard m-4 p-4">
           <div class="p-4">
             <img src="../assets/img/img/Brand-icon.png" alt="" />
           </div>
@@ -291,10 +291,60 @@ export default {
       </div>
     </section>
 
-    <!-- -->
-    <!-- -->
+    <!-- section VIII - Exams -->
 
-    <section></section>
+    <section class="exams container m-auto p-5">
+      <!-- Methods -->
+      <div class="methods d-flex justify-content-between align-items-center">
+        <div class="col-5">
+          <div>
+            <img
+              src="../assets/img/img/Exam-icon.png"
+              alt=""
+              class="icon-img"
+            />
+          </div>
+          <h1>The most efficient examination method</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur,
+            quidem natus eligendi accusamus cupiditate eum enim quaerat magni
+            maxime consequatur eveniet inventore nostrum temporibus fugiat,
+            nulla nemo assumenda quas! Repellat, repellendus expedita! Tempora
+            dolorem nulla ex.
+          </p>
+          <Button :text="btnText[7]"></Button>
+        </div>
+
+        <div class="col-5 me-5">
+          <img src="../assets/img/img/Exam-Illustration.png" alt="" />
+        </div>
+      </div>
+
+      <!-- Fees -->
+      <div class="fees d-flex justify-content-between align-items-center pb-5">
+        <div class="col-5 me-5">
+          <img src="../assets/img/img/Girl-Illustration.png" alt="" />
+        </div>
+        <div class="col-5">
+          <div>
+            <img
+              src="../assets/img/img/Exam-icon-1.png"
+              alt=""
+              class="icon-img"
+            />
+          </div>
+          <h1>Variable fees for international students</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur,
+            quidem natus eligendi accusamus cupiditate eum enim quaerat magni
+            maxime consequatur eveniet inventore nostrum temporibus fugiat,
+            nulla nemo assumenda quas! Repellat, repellendus expedita! Tempora
+            dolorem nulla ex.
+          </p>
+          <Button :text="btnText[8]"></Button>
+        </div>
+      </div>
+    </section>
   </main>
 </template>
 
@@ -307,7 +357,7 @@ main {
     font-weight: 700;
   }
   .icon-img {
-    width: 50px;
+    width: 60px;
     padding-bottom: 30px !important;
   }
 }
@@ -430,5 +480,17 @@ main {
 
 .btn {
   margin-bottom: -65px !important;
+}
+
+// section VIII - Exams
+
+.exams {
+  p {
+    padding: 40px 0 !important;
+  }
+
+  .fees {
+    margin-top: 150px !important;
+  }
 }
 </style>
