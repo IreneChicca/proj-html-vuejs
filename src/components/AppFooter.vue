@@ -8,6 +8,11 @@ export default {
 };
 </script>
 
-<template></template>
+<template><footer></footer></template>
 
-<style lang="scss"></style>
+<style lang="scss" scoped>
+footer {
+  height: 500px;
+  background-color: bisque;
+}
+</style>
