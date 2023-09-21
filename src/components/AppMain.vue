@@ -357,24 +357,30 @@ export default {
       <font-awesome-icon icon="fa-solid fa-book-open-reader" class="ico" />
       <font-awesome-icon icon="fa-regular fa-life-ring" class="ico" />
     </div>
+
+    <div class="fixed-backtop">
+      <font-awesome-icon icon="fa-solid fa-chevron-up" class="ico" />
+    </div>
   </main>
 </template>
 
 <style lang="scss">
 // GENERAL
 
-.fixed-icons {
+.fixed-backtop {
   position: fixed;
-  top: 220px;
+  bottom: 30px;
+  right: 30px;
   display: flex;
   flex-direction: column;
   background-color: var(--secondary-color);
   color: #fff;
-  border-radius: 0 5% 5% 0;
-  font-size: 40px;
-  box-shadow: 1px 1px 12px #666666bc;
+  border-radius: 50%;
+  font-size: 35px;
+
   .ico {
     padding: 10px !important;
+
     cursor: pointer;
     &:hover {
       color: var(--primary-color);
@@ -528,6 +534,27 @@ main {
 
   .fees {
     margin-top: 150px !important;
+  }
+}
+
+// fixed objects
+
+.fixed-icons {
+  position: fixed;
+  top: 220px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--secondary-color);
+  color: #fff;
+  border-radius: 0 5% 5% 0;
+  font-size: 37px;
+  box-shadow: 1px 1px 12px #666666bc;
+  .ico {
+    padding: 10px !important;
+    cursor: pointer;
+    &:hover {
+      color: var(--primary-color);
+    }
   }
 }
 </style>

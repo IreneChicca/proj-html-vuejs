@@ -26,6 +26,7 @@ import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { faBookOpenReader } from "@fortawesome/free-solid-svg-icons";
 import { faLifeRing } from "@fortawesome/free-regular-svg-icons";
+import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
 /* add icons to the library */
 library.add(
@@ -42,7 +43,8 @@ library.add(
   faInstagram,
   faCartShopping,
   faBookOpenReader,
-  faLifeRing
+  faLifeRing,
+  faChevronUp
 );
 
 createApp(App).component("font-awesome-icon", FontAwesomeIcon).mount("#app");
