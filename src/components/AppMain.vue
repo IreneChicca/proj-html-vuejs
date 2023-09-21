@@ -22,6 +22,14 @@ export default {
   },
 
   components: { Button, EventCard },
+
+  methods: {
+    showButton() {
+      if (window.pageYOfftes > 500) {
+        return true;
+      }
+    },
+  },
 };
 </script>
 
@@ -390,7 +398,9 @@ export default {
     </div>
 
     <div class="fixed-backtop">
-      <font-awesome-icon icon="fa-solid fa-chevron-up" class="ico" />
+      <a href="#"
+        ><font-awesome-icon icon="fa-solid fa-chevron-up" class="ico"
+      /></a>
     </div>
   </main>
 </template>
@@ -582,11 +592,14 @@ main {
   background-color: var(--secondary-color);
   color: #fff;
   border-radius: 50%;
-  font-size: 40px;
+  font-size: 20px;
+
+  a {
+    padding: 12px !important;
+    color: #fff;
+  }
 
   .ico {
-    padding: 10px !important;
-
     cursor: pointer;
     &:hover {
       color: var(--primary-color);
