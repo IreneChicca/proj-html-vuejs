@@ -349,11 +349,38 @@ export default {
         </div>
       </div>
     </section>
+
+    <!-- fixed objects -->
+
+    <div class="fixed-icons">
+      <font-awesome-icon icon="fa-solid fa-cart-shopping" class="ico" />
+      <font-awesome-icon icon="fa-solid fa-book-open-reader" class="ico" />
+      <font-awesome-icon icon="fa-regular fa-life-ring" class="ico" />
+    </div>
   </main>
 </template>
 
 <style lang="scss">
 // GENERAL
+
+.fixed-icons {
+  position: fixed;
+  top: 220px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--secondary-color);
+  color: #fff;
+  border-radius: 0 5% 5% 0;
+  font-size: 40px;
+  box-shadow: 1px 1px 12px #666666bc;
+  .ico {
+    padding: 10px !important;
+    cursor: pointer;
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+}
 
 main {
   h1,
