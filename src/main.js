@@ -20,6 +20,9 @@ import { faEye } from "@fortawesome/free-solid-svg-icons";
 import { faMoneyBill1 } from "@fortawesome/free-solid-svg-icons";
 import { faCalendarDays } from "@fortawesome/free-regular-svg-icons";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 /* add icons to the library */
 library.add(
@@ -30,7 +33,10 @@ library.add(
   faEye,
   faMoneyBill1,
   faCalendarDays,
-  faPaperPlane
+  faPaperPlane,
+  faFacebookF,
+  faTwitter,
+  faInstagram
 );
 
 createApp(App).component("font-awesome-icon", FontAwesomeIcon).mount("#app");

@@ -3,6 +3,34 @@ export default {
   data() {
     return {
       title: "App Footer",
+
+      footerLinks: {
+        getEduPrime: [
+          "Request a website",
+          "Browse Theme",
+          " Payment Options",
+          "Support System",
+          " Checkuot",
+          "Purchase Theme",
+        ],
+        networking: [
+          "Purchase Theme",
+          "Our Benefits",
+          " Our Team",
+          " Our Services",
+          "Other Products",
+          "My account",
+        ],
+        categories: [
+          "economy",
+          "design",
+          "coaching",
+          "business",
+          "medicine",
+          "law",
+          "fitness",
+        ],
+      },
     };
   },
 };
@@ -51,7 +79,69 @@ export default {
         <img src="../assets/img/img/partner-7.png" />
       </div>
     </section>
-    <section></section>
+
+    <!-- contacts -->
+    <section class="contacts pt-5">
+      <div class="container d-flex m-auto p-5 justify-content-evenly">
+        <!-- col 1 -->
+        <div class="col-4">
+          <div class="w-50">
+            <img src="../assets/img/img/theme_eduprime_logo.png" alt="" />
+          </div>
+          <p class="pt-4">
+            EduPrime si the most versatile WordPress theme for educational
+            purposes, showcasing universities, courses, secondary schools etc.
+          </p>
+          <div class="pt-5">
+            <font-awesome-icon icon="fa-brands fa-facebook-f" class="ico" />
+            <font-awesome-icon icon="fa-brands fa-twitter" class="ico" />
+            <font-awesome-icon icon="fa-brands fa-instagram" class="ico" />
+          </div>
+        </div>
+        <!-- col 2 -->
+        <div class="col-3 d-flex">
+          <div class="col-6">
+            <h5 class="pb-4">Get EduPrime</h5>
+            <ul>
+              <li v-for="link in footerLinks.getEduPrime" class="pb-3">
+                {{ link }}
+              </li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <h5 class="pb-4">Networking</h5>
+            <ul>
+              <li v-for="link in footerLinks.networking" class="pb-3">
+                {{ link }}
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- col 3 -->
+        <div class="col-3">
+          <div class="pb-5">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control p-3"
+                placeholder="Search..."
+                aria-label="Recipient's username"
+                aria-describedby="button-addon2"
+              />
+              <button class="input-btn p-3" type="button">
+                <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
+              </button>
+            </div>
+          </div>
+          <h6 class="text-end">Search categories</h6>
+          <div class="pt-4">
+            <p v-for="link in footerLinks.categories" class="category">
+              {{ link }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   </footer>
 </template>
 
@@ -83,6 +173,41 @@ footer {
     img {
       width: 90px;
       filter: invert(85%);
+    }
+  }
+
+  .contacts {
+    background-color: var(--primary-color);
+    color: #fff;
+
+    .ico {
+      border: 3px solid var(--secondary-color);
+      font-size: 50px;
+      padding: 15px !important;
+      border-radius: 50%;
+      margin-right: 15px !important;
+      cursor: pointer;
+      &:hover {
+        background-color: #fff;
+        color: var(--primary-color);
+        border: 3px solid var(--primary-color);
+      }
+    }
+
+    li {
+      list-style: none;
+      font-weight: 100;
+    }
+
+    .category {
+      display: inline-block;
+      text-transform: uppercase;
+      padding: 8px 13px !important;
+      border: 1px solid #fff;
+      border-radius: 40px;
+      font-size: 11px;
+      margin: 5px 6px 10px 0 !important;
+      float: right;
     }
   }
 
