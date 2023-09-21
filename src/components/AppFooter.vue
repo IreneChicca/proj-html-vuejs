@@ -200,19 +200,21 @@ footer {
     }
 
     .category {
-      display: inline-block;
       text-transform: uppercase;
       padding: 8px 13px !important;
       border: 1px solid #fff;
       border-radius: 40px;
       font-size: 11px;
       margin: 5px 6px 10px 0 !important;
+      cursor: pointer;
       float: right;
-    }
-  }
 
-  .debug {
-    border: 1px solid red;
+      &:hover {
+        background-color: #fff;
+        border: 1px solid var(--primary-color);
+        color: var(--primary-color);
+      }
+    }
   }
 }
 </style>

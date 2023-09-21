@@ -1,5 +1,6 @@
 <script>
 import Button from "./Button.vue";
+import EventCard from "./EventCard.vue";
 
 export default {
   data() {
@@ -16,10 +17,11 @@ export default {
         "Discover the Method",
         "List of Fees",
       ],
+      eventDate: ["20 May 21:30 PM", "24 Mar 18:00 PM", " 12 Feb 13:30 PM"],
     };
   },
 
-  components: { Button },
+  components: { Button, EventCard },
 };
 </script>
 
@@ -188,7 +190,7 @@ export default {
     </section>
 
     <!-- section VI - Events -->
-    <section class="events text-center">
+    <section class="events text-center pb-5">
       <div class="container m-auto">
         <img
           src="../assets/img/img/upcoming-events-calendar-icon.png"
@@ -196,7 +198,9 @@ export default {
         />
         <h2>Upcoming Events</h2>
       </div>
-      <div><!-- inserisci card con v-for --></div>
+      <div class="event-box container m-auto">
+        <EventCard v-for="(date, i) in eventDate" :date="eventDate[i]" />
+      </div>
       <Button :text="btnText[4]" color="gold"></Button>
     </section>
     <!-- section VII - Latest -->
@@ -458,6 +462,12 @@ main {
   background-color: var(--primary-color);
   h2 {
     color: #fff;
+  }
+
+  .event-box {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 0 90px !important;
   }
 }
 
