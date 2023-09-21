@@ -33,7 +33,24 @@ export default {
         </div>
       </div>
     </section>
-    <section></section>
+    <!-- Partners -->
+    <section class="partners text-center p-5">
+      <h2>Partners</h2>
+      <p class="col-5 m-auto p-4">
+        Levage agile frameworks to provide a robust synopsis for high level
+        overviews. Iterative approaches to corporate strategy.
+      </p>
+
+      <div class="d-flex justify-content-evenly container m-auto pt-5">
+        <img src="../assets/img/img/partner-2.png" />
+        <img src="../assets/img/img/partner-3.png" />
+        <img src="../assets/img/img/partner-4.png" />
+        <img src="../assets/img/img/partner-5.png" />
+        <img src="../assets/img/img/partner-6.png" />
+        <img src="../assets/img/img/partner-1.png" />
+        <img src="../assets/img/img/partner-7.png" />
+      </div>
+    </section>
     <section></section>
   </footer>
 </template>
@@ -41,8 +58,10 @@ export default {
 <style lang="scss" scoped>
 footer {
   height: 500px;
-  background-color: bisque;
 
+  h2 {
+    font-weight: 600;
+  }
   .newsletter {
     background-color: var(--primary-color);
     color: #fff;
@@ -57,6 +76,14 @@ footer {
     border: none;
     margin-left: 40px;
     color: #fff;
+  }
+
+  .partners {
+    height: 600px;
+    img {
+      width: 90px;
+      filter: invert(85%);
+    }
   }
 
   .debug {
