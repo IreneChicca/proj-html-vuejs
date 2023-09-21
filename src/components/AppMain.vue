@@ -416,8 +416,10 @@ main {
 // section I - Jumbo
 
 .jumbo {
-  background-color: var(--primary-color);
   color: #fff;
+  background-image: url(../assets/img/img/image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 
   p {
     width: 600px;
@@ -429,6 +431,9 @@ main {
 
 .courses {
   height: 600px;
+  background-image: url(../assets/img/img/home-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 // section III - Faculties
@@ -577,7 +582,7 @@ main {
   background-color: var(--secondary-color);
   color: #fff;
   border-radius: 50%;
-  font-size: 35px;
+  font-size: 40px;
 
   .ico {
     padding: 10px !important;

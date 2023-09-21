@@ -147,8 +147,6 @@ export default {
 
 <style lang="scss" scoped>
 footer {
-  height: 500px;
-
   h2 {
     font-weight: 600;
   }
@@ -169,7 +167,7 @@ footer {
   }
 
   .partners {
-    height: 600px;
+    height: 500px;
     img {
       width: 90px;
       filter: invert(85%);
@@ -181,7 +179,7 @@ footer {
     color: #fff;
 
     .ico {
-      border: 3px solid var(--secondary-color);
+      border: 2px solid var(--secondary-color);
       font-size: 50px;
       padding: 15px !important;
       border-radius: 50%;
@@ -190,7 +188,7 @@ footer {
       &:hover {
         background-color: #fff;
         color: var(--primary-color);
-        border: 3px solid var(--primary-color);
+        border: 2px solid var(--primary-color);
       }
     }
 

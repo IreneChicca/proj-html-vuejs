@@ -42,7 +42,7 @@ export default {
 
 <style lang="scss" scoped>
 header {
-  background-color: var(--primary-color);
+  background-color: #d96c6e;
   color: #fff;
   font-weight: 500;
 
